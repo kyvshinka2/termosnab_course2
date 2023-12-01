@@ -20,13 +20,34 @@
     <div class="content">
         <div class="bottomInfoHead">
             <p>Вы здесь: => <a href="../inedx.php">Главная страница</a> => <a href="./katalog.php">Каталог</a> => Котлы </p>
-            <p>Корзина</p>
+            <a href="./shopCart.php">Корзина</a>
         </div>
         <br> 
 
         <!-- каталог -->
+        <div class="container">
+        <?php
+            session_start();
+            require('../php/connect.php');
 
-
+            $sql = "SELECT `Name`, `Description`, `Price`, `Img`, `Quantity` FROM `Product` WHERE `Category` = 'Котел'";
+            $result = $mysql->query($sql);
+            foreach ($result as $row) {
+                echo "
+                <div class='product'>
+                    <div class='product-img'>
+                        <img src='".$row['Img']."' alt='Котел'>
+                    </div>
+                    <p class='product-title'>".$row['Name']."</p>
+                    <p class='product-Price'>".$row['Price']." ₽</p>
+                    <p class='product-Quantity'>Осталось: ".$row['Quantity']."</p>";
+                    if(isset($_SESSION ['name'])) {
+                        echo " <input type='submit' class='to-cart' value='В корзину'/>";
+                    }
+                echo "</div>";
+            }
+        ?>
+        </div>
     </div> 
     <br>
     <!-- подвал футер -->

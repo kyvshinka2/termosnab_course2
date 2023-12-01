@@ -21,7 +21,7 @@
     <div class="content">
         <div class="bottomInfoHead">
             <p>Вы здесь: => Главная страница</p>
-            <p>Корзина</p>
+            <a href="../page/shopCart.php">Корзина</a>
         </div>
 
         <br>

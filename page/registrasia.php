@@ -20,7 +20,7 @@
     <div class="content">
         <div class="bottomInfoHead">
             <p>Вы здесь: => <a href="../inedx.html">Главная страница</a> => Регистрация</p>
-            <p>Корзина</p>
+            <a href="./shopCart.php">Корзина</a>
         </div>
 
         <!-- регистрация, авторизация -->

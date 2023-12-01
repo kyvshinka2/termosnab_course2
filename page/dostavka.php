@@ -20,7 +20,7 @@
     <div class="content">
         <div class="bottomInfoHead">
             <p>Вы здесь: => <a href="../inedx.php">Главная страница</a> => Доставка и оплата</p>
-            <p>Корзина</p>
+            <a href="./shopCart.php">Корзина</a>
         </div>
         
         <div class="dostavka">

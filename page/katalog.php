@@ -20,7 +20,7 @@
     <div class="content">
         <div class="bottomInfoHead">
             <p>Вы здесь: => <a href="../inedx.php">Главная страница</a> => Каталог</p>
-            <p>Корзина</p>
+            <a href="./shopCart.php">Корзина</a>
         </div>
         <br> 
 
@@ -36,68 +36,45 @@
                     </div>
                     <div class="product">
                         <div class="product-img">
-                            <a href="#"><img src="../img/радиатор.png" alt="радиатор"></a>
+                            <a href="./radiator.php"><img src="../img/радиатор.png" alt="радиатор"></a>
                         </div>
                         <p class="product-title">
-                            <a href="#">Радиаторы</a>
+                            <a href="./radiator.php">Радиаторы</a>
                         </p>
                     </div>
-                    <div class="col-md-8 products">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#"><img src="../img/сварка.jpg" alt="сварка"></a>
-                                    </div>
-                                    <p class="product-title">
-                                        <a href="#">Сварочное оборудование</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="./svarka.php"><img src="../img/сварка.jpg" alt="сварка"></a>
                         </div>
+                        <p class="product-title">
+                            <a href="./svarka.php">Сварочное оборудование</a>
+                        </p>
                     </div>
-                    <div class="col-md-8 products">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#"><img src="../img/инструмент.jpg" alt="инструмент"></a>
-                                    </div>
-                                    <p class="product-title">
-                                        <a href="#">Инструменты</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="./instrument.php"><img src="../img/инструмент.jpg" alt="инструмент"></a>
                         </div>
+                        <p class="product-title">
+                            <a href="./instrument.php">Инструменты</a>
+                        </p>
                     </div>
-                    <div class="col-md-8 products">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#"><img src="../img/трубопровод.jfif" alt="трубопровод"></a>
-                                    </div>
-                                    <p class="product-title">
-                                        <a href="#">Трубопровод</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="./truboprovod.php"><img src="../img/трубопровод.jfif" alt="трубопровод"></a>
                         </div>
+                        <p class="product-title">
+                            <a href="./truboprovod.php">Трубопровод</a>
+                        </p>
                     </div>
-                    <div class="col-md-8 products">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="#"><img src="../img/горелка_наддувная.jfif" alt="горелка надувная"></a>
-                                    </div>
-                                    <p class="product-title">
-                                        <a href="#">Горелки надувные</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="./gorelka.php"><img src="../img/горелка_наддувная.jfif" alt="горелка надувная"></a>
                         </div>
+                        <p class="product-title">
+                            <a href="./gorelka.php">Горелки надувные</a>
+                        </p>
                     </div>
+        </div>
     </div>
     <br>
     <!-- подвал футер -->
