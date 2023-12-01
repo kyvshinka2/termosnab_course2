@@ -25,7 +25,9 @@
         <br> 
 
         <!-- каталог -->
-        
+        <p><?php
+echo $_SESSION ['nameID'];
+        ?></p>
 
     </div> 
     <br>

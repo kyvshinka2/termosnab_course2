@@ -35,6 +35,7 @@
             foreach ($result as $row) {
                 echo "
                 <div class='product'>
+                <form action='../php/addProduct.php' method='POST'>
                     <div class='product-img'>
                         <img src='".$row['Img']."' alt='Котел'>
                     </div>
@@ -44,6 +45,7 @@
                     if(isset($_SESSION ['name'])) {
                         echo " <input type='submit' class='to-cart' value='В корзину'/>";
                     }
+                    echo "</form>"; 
                 echo "</div>";
             }
         ?>

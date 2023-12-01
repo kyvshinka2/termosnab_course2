@@ -24,7 +24,7 @@ if($mysql->connect_error){
 // $query ="SELECT * FROM `Student` WHERE `Log_In` = '$login' AND `Password` = '$newPass'";
 
 
-$query = "SELECT Log_In, Password FROM User WHERE User.Log_In = '$login'";
+$query = "SELECT * FROM `User` WHERE Log_In = '$login'";
 // выполнение запроса
 $result = $mysql->query($query);
 
@@ -34,7 +34,8 @@ if($result) {
         // проверка хешированного пароля
         if(password_verify($password, $proverka_password)) {
             echo session_id(); 
-            $_SESSION ['name']= $login;
+            $_SESSION ['name'] = $row['Name'];
+            $_SESSION ['ID'] = $row['ID'];
             header('Location: ../page/kabinet.php');
         } else {
             echo "Пароль неверный";
