@@ -30,7 +30,7 @@
             session_start();
             require('../php/connect.php');
 
-            $sql = "SELECT `Name`, `Description`, `Price`, `Img`, `Quantity` FROM `Product` WHERE `Category` = 'Инструмент'";
+            $sql = "SELECT * FROM `Product` WHERE `Category` = 'Инструмент'";
             $result = $mysql->query($sql);
             foreach ($result as $row) {
                 echo "
@@ -39,10 +39,11 @@
                         <div class='product-img'>
                             <img src='".$row['Img']."' alt='Котел'>
                         </div>
+                        <input type='text' name='product_id' id='product_id' hidden value='".$row['ID']."'/>
                         <p class='product-title'>".$row['Name']."</p>
                         <p class='product-Price'>".$row['Price']." ₽</p>
                         <p class='product-Quantity'>Осталось: ".$row['Quantity']."</p>";
-                        if(isset($_SESSION ['name'])) {
+                        if(isset($_SESSION ['ID_User'])) {
                             echo " <input type='submit' class='to-cart' value='В корзину'/>";
                         }
                     echo "</form>";    

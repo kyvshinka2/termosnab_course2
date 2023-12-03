@@ -19,7 +19,7 @@
             <a href="../inedx.php">Главная</a>
             <a href="./o_companii.php">О_компании</a>
             <a href="./katalog.php">Каталог</a>
-            <a href="./page/dostavka.php">Доставка_и_оплата</a>
+            <a href="./dostavka.php">Доставка_и_оплата</a>
             <a href="./registrasia.php">Регистрация</a>
             <a href="./kabinet.php">Кабинет</a>
         </nav>

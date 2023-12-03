@@ -33,9 +33,8 @@ if($result) {
         $proverka_password = $row["Password"];
         // проверка хешированного пароля
         if(password_verify($password, $proverka_password)) {
-            echo session_id(); 
             $_SESSION ['name'] = $row['Name'];
-            $_SESSION ['ID'] = $row['ID'];
+            $_SESSION ['ID_User'] = $row['ID'];
             header('Location: ../page/kabinet.php');
         } else {
             echo "Пароль неверный";
