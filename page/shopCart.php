@@ -94,24 +94,14 @@
                 if(isset($_POST['oformitOrder'])) {
                     echo "
                     <form action='../php/oformitOrder.php' method='post'>
-                        <p>Выберите форму доставки: </p>
-                        <select name='delivery' id='delivery'>
-                            <option value='Самовывоз'>Самовывоз</option>
-                            <option value='Курьер'>Курьер</option>
-                        </select>
-                        <p>Введите адрес доставки (если выбрали категорию: Курьер):</p>
-                        <input type='text' name='address' placeholder='Введите адрес'>
-                        <p>По желанию, напишите комментарий:</p>
-                        <input type='text' name='comment' placeholder='Комментарий'>
-                        <h1>Пожалуйста, заполните дополнительные данные для оформления заказа:</h1>
                         <p>Введите Фамилию и отчетсво:</p>
                         <input type='text' name='fio' placeholder='Введите фамилию, отчество'>
                         <p>Введите номер телефона:</p>
-                        <input type='number' name='number' placeholder='Введите Номер'>
+                        <input id='phone' type='number' name='number' placeholder='Введите Номер'>
                         <p>Введите почту:</p>
-                        <input type='text' name='email' placeholder='Введите почту'>
+                        <input id='email' type='text' name='email' placeholder='Введите почту'>
                         <p>Номер банковской карты:</p>
-                        <input type='number' name='bank' placeholder='Введите номер карты'><br>
+                        <input id='bank' type='number' name='bank' placeholder='Введите номер карты'><br><br>
                         <input type='submit' value='Отправить'/>
                     </form>";
                 } elseif(isset($_POST['skratOrder'])) {
